@@ -2,7 +2,6 @@
 	import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
 	let condition = false;
 	let visible = true;
-
 </script>
 
 <svelte:head>
@@ -10,27 +9,30 @@
 </svelte:head>
 
 {#if visible}
-	<div class="box" transition:slide>
-		Fades in and out
-	</div>
+	<div class="box" transition:scale>Fades in and out</div>
 {/if}
 
 <label>
-	<input type="checkbox" bind:checked={visible}>
+	<input type="checkbox" bind:checked={visible} />
 	visible
 </label>
 
-<br><br>
-컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br /><br />
+컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠
+나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는
+영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠
+나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는 영역 컨텐츠 나오는
+영역
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 컨텐츠 나오는 영역
 
 <style>
 	.box {
-		border:solid #666 1px;padding:10px;
+		border: solid #666 1px;
+		padding: 10px;
 	}
 </style>
